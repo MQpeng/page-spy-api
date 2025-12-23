@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"os"
+	"path/filepath"
 	"strconv"
 	"time"
 
@@ -14,6 +15,7 @@ import (
 	"github.com/labstack/gommon/log"
 )
 
+const ConfigDir = "config"
 const ConfigFileName = "config.json"
 
 //go:embed defaultConfig.json
@@ -92,33 +94,42 @@ func generateRandomSecret(length int) string {
 }
 
 func checkLocalConfigFile() error {
-	_, err := os.Stat(ConfigFileName)
+	// Ensure config directory exists
+	if err := os.MkdirAll(ConfigDir, 0755); err != nil {
+		return fmt.Errorf("create config dir %s error %w", ConfigDir, err)
+	}
+
+	configPath := filepath.Join(ConfigDir, ConfigFileName)
+	_, err := os.Stat(configPath)
 	if os.IsNotExist(err) {
-		log.Warnf("config file %s not exist", ConfigFileName)
-		file, err := os.Create(ConfigFileName)
+		log.Warnf("config file %s not exist", configPath)
+		file, err := os.Create(configPath)
 		if err != nil {
-			return fmt.Errorf("create config file %s error %w", ConfigFileName, err)
+			return fmt.Errorf("create config file %s error %w", configPath, err)
 		}
 		defer file.Close()
 		_, err = file.Write(DefaultConfigJsonByte)
 		if err != nil {
-			return fmt.Errorf("write config file %s error %w", ConfigFileName, err)
+			return fmt.Errorf("write config file %s error %w", configPath, err)
 		}
+	} else if err != nil {
+		return fmt.Errorf("stat config file %s error %w", configPath, err)
 	}
 	return nil
 }
 
 func loadLocalConfigFile() (*Config, error) {
 	config := &Config{}
-	f, err := os.Open(ConfigFileName)
+	configPath := filepath.Join(ConfigDir, ConfigFileName)
+	f, err := os.Open(configPath)
 	if err != nil {
-		return nil, fmt.Errorf("read config.json error %w", err)
+		return nil, fmt.Errorf("read config file %s error %w", configPath, err)
 	}
 	defer f.Close()
 	encoder := json.NewDecoder(f)
 	err = encoder.Decode(config)
 	if err != nil {
-		return nil, fmt.Errorf("decode config.json error %w", err)
+		return nil, fmt.Errorf("decode config file %s error %w", configPath, err)
 	}
 	return config, nil
 }
