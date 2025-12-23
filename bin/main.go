@@ -4,9 +4,9 @@ import (
 	"embed"
 	"log"
 
-	"github.com/HuolalaTech/page-spy-api/config"
-	"github.com/HuolalaTech/page-spy-api/container"
-	"github.com/HuolalaTech/page-spy-api/serve"
+	"github.com/MQpeng/page-spy-api/config"
+	"github.com/MQpeng/page-spy-api/container"
+	"github.com/MQpeng/page-spy-api/serve"
 )
 
 //go:embed dist/*

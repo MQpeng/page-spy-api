@@ -7,9 +7,9 @@ import (
 	"sort"
 	"time"
 
-	"github.com/HuolalaTech/page-spy-api/api/event"
-	"github.com/HuolalaTech/page-spy-api/api/room"
-	localRpc "github.com/HuolalaTech/page-spy-api/rpc"
+	"github.com/MQpeng/page-spy-api/api/event"
+	"github.com/MQpeng/page-spy-api/api/room"
+	localRpc "github.com/MQpeng/page-spy-api/rpc"
 )
 
 func NewRemoteRpcRoomManager(addressManager *localRpc.AddressManager,

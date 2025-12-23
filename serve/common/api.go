@@ -1,7 +1,7 @@
 package common
 
 import (
-	"github.com/HuolalaTech/page-spy-api/api/room"
+	"github.com/MQpeng/page-spy-api/api/room"
 )
 
 type Response struct {

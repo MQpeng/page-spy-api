@@ -6,11 +6,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/HuolalaTech/page-spy-api/api/event"
-	"github.com/HuolalaTech/page-spy-api/api/room"
-	"github.com/HuolalaTech/page-spy-api/metric"
-	"github.com/HuolalaTech/page-spy-api/rpc"
-	"github.com/HuolalaTech/page-spy-api/state"
+	"github.com/MQpeng/page-spy-api/api/event"
+	"github.com/MQpeng/page-spy-api/api/room"
+	"github.com/MQpeng/page-spy-api/metric"
+	"github.com/MQpeng/page-spy-api/rpc"
+	"github.com/MQpeng/page-spy-api/state"
 	"github.com/sirupsen/logrus"
 )
 

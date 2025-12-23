@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/HuolalaTech/page-spy-api/config"
+	"github.com/MQpeng/page-spy-api/config"
 	"github.com/golang-jwt/jwt/v5"
 )
 

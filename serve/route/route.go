@@ -9,14 +9,14 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/HuolalaTech/page-spy-api/config"
-	"github.com/HuolalaTech/page-spy-api/data"
-	"github.com/HuolalaTech/page-spy-api/proxy"
-	"github.com/HuolalaTech/page-spy-api/serve/common"
-	selfMiddleware "github.com/HuolalaTech/page-spy-api/serve/middleware"
-	"github.com/HuolalaTech/page-spy-api/serve/socket"
-	"github.com/HuolalaTech/page-spy-api/static"
-	"github.com/HuolalaTech/page-spy-api/storage"
+	"github.com/MQpeng/page-spy-api/config"
+	"github.com/MQpeng/page-spy-api/data"
+	"github.com/MQpeng/page-spy-api/proxy"
+	"github.com/MQpeng/page-spy-api/serve/common"
+	selfMiddleware "github.com/MQpeng/page-spy-api/serve/middleware"
+	"github.com/MQpeng/page-spy-api/serve/socket"
+	"github.com/MQpeng/page-spy-api/static"
+	"github.com/MQpeng/page-spy-api/storage"
 	"github.com/labstack/echo/v4"
 )
 

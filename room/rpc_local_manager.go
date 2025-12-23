@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/HuolalaTech/page-spy-api/api/room"
-	"github.com/HuolalaTech/page-spy-api/rpc"
+	"github.com/MQpeng/page-spy-api/api/room"
+	"github.com/MQpeng/page-spy-api/rpc"
 )
 
 type LocalRpcRoomManager struct {

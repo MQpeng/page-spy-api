@@ -3,8 +3,8 @@ package middleware
 import (
 	"net/http"
 
-	"github.com/HuolalaTech/page-spy-api/api/room"
-	"github.com/HuolalaTech/page-spy-api/serve/common"
+	"github.com/MQpeng/page-spy-api/api/room"
+	"github.com/MQpeng/page-spy-api/serve/common"
 	"github.com/labstack/echo/v4"
 )
 

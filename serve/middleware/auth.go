@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/HuolalaTech/page-spy-api/config"
-	"github.com/HuolalaTech/page-spy-api/serve/common"
+	"github.com/MQpeng/page-spy-api/config"
+	"github.com/MQpeng/page-spy-api/serve/common"
 	"github.com/labstack/echo/v4"
 )
 

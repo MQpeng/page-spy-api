@@ -5,8 +5,8 @@ import (
 	"net/http/httputil"
 	"net/url"
 
-	"github.com/HuolalaTech/page-spy-api/config"
-	"github.com/HuolalaTech/page-spy-api/rpc"
+	"github.com/MQpeng/page-spy-api/config"
+	"github.com/MQpeng/page-spy-api/rpc"
 	"github.com/labstack/echo/v4"
 )
 

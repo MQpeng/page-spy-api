@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/HuolalaTech/page-spy-api/api/event"
-	"github.com/HuolalaTech/page-spy-api/rpc"
+	"github.com/MQpeng/page-spy-api/api/event"
+	"github.com/MQpeng/page-spy-api/rpc"
 )
 
 func NewLocalEventEmitter(addressManager *rpc.AddressManager, rpcManager *rpc.RpcManager) event.EventEmitter {

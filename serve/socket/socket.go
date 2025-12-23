@@ -12,13 +12,13 @@ import (
 	"sync"
 	"time"
 
-	eventApi "github.com/HuolalaTech/page-spy-api/api/event"
-	roomApi "github.com/HuolalaTech/page-spy-api/api/room"
-	"github.com/HuolalaTech/page-spy-api/logger"
-	"github.com/HuolalaTech/page-spy-api/metric"
-	"github.com/HuolalaTech/page-spy-api/room"
-	"github.com/HuolalaTech/page-spy-api/serve/common"
-	"github.com/HuolalaTech/page-spy-api/util"
+	eventApi "github.com/MQpeng/page-spy-api/api/event"
+	roomApi "github.com/MQpeng/page-spy-api/api/room"
+	"github.com/MQpeng/page-spy-api/logger"
+	"github.com/MQpeng/page-spy-api/metric"
+	"github.com/MQpeng/page-spy-api/room"
+	"github.com/MQpeng/page-spy-api/serve/common"
+	"github.com/MQpeng/page-spy-api/util"
 	"github.com/gorilla/websocket"
 )
 

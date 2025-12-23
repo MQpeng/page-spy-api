@@ -8,9 +8,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/HuolalaTech/page-spy-api/api/event"
-	"github.com/HuolalaTech/page-spy-api/config"
-	"github.com/HuolalaTech/page-spy-api/util"
+	"github.com/MQpeng/page-spy-api/api/event"
+	"github.com/MQpeng/page-spy-api/config"
+	"github.com/MQpeng/page-spy-api/util"
 	"github.com/google/uuid"
 )
 

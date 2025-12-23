@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/HuolalaTech/page-spy-api/api/event"
-	"github.com/HuolalaTech/page-spy-api/api/room"
-	roomApi "github.com/HuolalaTech/page-spy-api/api/room"
-	"github.com/HuolalaTech/page-spy-api/logger"
-	"github.com/HuolalaTech/page-spy-api/rpc"
+	"github.com/MQpeng/page-spy-api/api/event"
+	"github.com/MQpeng/page-spy-api/api/room"
+	roomApi "github.com/MQpeng/page-spy-api/api/room"
+	"github.com/MQpeng/page-spy-api/logger"
+	"github.com/MQpeng/page-spy-api/rpc"
 	"github.com/sirupsen/logrus"
 )
 

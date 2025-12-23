@@ -5,7 +5,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/HuolalaTech/page-spy-api/rpc"
+	"github.com/MQpeng/page-spy-api/rpc"
 	"gorm.io/gorm"
 )
 

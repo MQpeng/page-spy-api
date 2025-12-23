@@ -1,9 +1,9 @@
 package serve
 
 import (
-	"github.com/HuolalaTech/page-spy-api/config"
-	"github.com/HuolalaTech/page-spy-api/container"
-	"github.com/HuolalaTech/page-spy-api/util"
+	"github.com/MQpeng/page-spy-api/config"
+	"github.com/MQpeng/page-spy-api/container"
+	"github.com/MQpeng/page-spy-api/util"
 	"github.com/labstack/echo/v4"
 )
 

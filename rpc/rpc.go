@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/HuolalaTech/page-spy-api/api/event"
+	"github.com/MQpeng/page-spy-api/api/event"
 	"github.com/gorilla/mux"
 	hRpc "github.com/gorilla/rpc/v2"
 	hJson "github.com/gorilla/rpc/v2/json"

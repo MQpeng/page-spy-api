@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/HuolalaTech/page-spy-api/api/room"
-	"github.com/HuolalaTech/page-spy-api/metric"
-	"github.com/HuolalaTech/page-spy-api/state"
+	"github.com/MQpeng/page-spy-api/api/room"
+	"github.com/MQpeng/page-spy-api/metric"
+	"github.com/MQpeng/page-spy-api/state"
 	req "github.com/imroc/req/v2"
 )
 

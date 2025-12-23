@@ -4,8 +4,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/HuolalaTech/page-spy-api/logger"
-	"github.com/HuolalaTech/page-spy-api/metric"
+	"github.com/MQpeng/page-spy-api/logger"
+	"github.com/MQpeng/page-spy-api/metric"
 	"github.com/google/uuid"
 	echo "github.com/labstack/echo/v4"
 )

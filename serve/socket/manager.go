@@ -1,12 +1,12 @@
 package socket
 
 import (
-	"github.com/HuolalaTech/page-spy-api/config"
-	"github.com/HuolalaTech/page-spy-api/event"
-	"github.com/HuolalaTech/page-spy-api/logger"
-	"github.com/HuolalaTech/page-spy-api/room"
-	"github.com/HuolalaTech/page-spy-api/rpc"
-	"github.com/HuolalaTech/page-spy-api/util"
+	"github.com/MQpeng/page-spy-api/config"
+	"github.com/MQpeng/page-spy-api/event"
+	"github.com/MQpeng/page-spy-api/logger"
+	"github.com/MQpeng/page-spy-api/room"
+	"github.com/MQpeng/page-spy-api/rpc"
+	"github.com/MQpeng/page-spy-api/util"
 )
 
 func NewManager(config *config.Config, rpcManager *rpc.RpcManager, addressManager *rpc.AddressManager) (*room.RemoteRpcRoomManager, error) {
