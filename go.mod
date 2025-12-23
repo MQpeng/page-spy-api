@@ -1,4 +1,4 @@
-module github.com/HuolalaTech/page-spy-api
+module github.com/MQpeng/page-spy-api
 
 go 1.23.0
 
